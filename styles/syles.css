@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/img/13.jpg);
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    background-color: wheat;
+    padding: 10px;
+    
+    
+}
+
+.gallery img{
+    width: 500px;
+    height: 750px;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+} 
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+        line-height: 3px;
+        position: fixed;
+        float: left;
+        margin: -27px 29px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .menu-icon{
+        line-height: 60px;
+        width: 111%;
+        background: #000;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 29px 21px;
+        cursor: pointer;
+        color: #fff;
+        display: none;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 31em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+    .gallery{
+        grid-template: repeat(1,1fr) / repeat(1, 1fr);
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        background-color: wheat;
+        padding: 26px 10px;
+        /* margin-left: 50px; */
+    }
+    
+
+    .gallery img{
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        margin-top: 200px;
+        margin-bottom: -90px;
+    }
+
+    footer{
+        text-align: center;
+        width: 100%;
+    }
+
+    nav{
+        position: fixed;
+        width: 100%;
+        line-height: 60px;
+        
+    }
+    video{
+        display: none;
+    }
+
+    .video{
+        position: absolute;
+    top: 55%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;    
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(/img/20.jpg), no-repeat;
+    background-size: cover;
+    
+    }
+}
